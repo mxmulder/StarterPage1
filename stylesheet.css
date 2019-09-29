@@ -1,0 +1,47 @@
+body {
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    font-size: 10pt;
+    background: rgb(34,34,37);
+}
+
+.Main_Wrapper {
+    display: grid;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.CONTENT {
+    align-content: center;    
+    margin: 10pt;
+}
+
+.Category {
+    color: rgb(211, 194, 174); 
+    font-size: 12pt;
+    align-content: center;
+    margin: 10pt;
+}
+
+a:link, a:visited { 
+    text-decoration: none; 
+    font-size: 9pt;
+    display: block;
+    margin-top: 3pt;
+    margin-left: 3pt;
+}
+
+.fixed { position: absolute; transform: translate(290%, 0); font-size: 7pt;}
+.white     { color: rgb(211, 194, 174); }
+.gray      { color: rgb(116, 116, 116); }
+.darkgray  { color: rgb(73, 73, 73); }
+.red       { color: rgb(165, 106, 106); }
+.orange    { color: rgb(145, 121, 95); }
+.yellow    { color: rgb(153, 147, 104); }
+.green     { color: rgb(94, 116, 97); }
+.blue      { color: rgb(89, 103, 133); }
+.blue_alt  { color: rgb(92, 130, 139); }
+.pink      { color: rgb(156, 110, 141); }
+.purple    { color: rgb(103, 90, 116); }
+.brown     { color: rgb(134, 115, 103); }
