@@ -1,47 +1,85 @@
+html {
+    height: 100vh;
+}
+
 body {
     font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     background: rgb(34,34,37);
+    margin:0%;
+    height: 100%;
+}
+
+span {
+    opacity: 0.35;
+}
+
+.funday {
+    font-family: Comic Sans MS;
+    transform: translate(-20%,70pt);
+    width: 250%;
+    color: whitesmoke;
+    font-size: 8pt;
 }
 
 .Main_Wrapper {
+    height: 100%;
     display: grid;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    grid-template-rows: repeat(3, 1fr); 
+    margin-left: 8vw;
+    margin-right: 8vw;
+    grid-template-rows: 1fr 1fr 2fr; 
     grid-template-columns: repeat(8, 1fr);
 }
 
 .CONTENT {
-    align-content: center;    
-    margin: 10pt;
+    text-align: center;
+    margin: 10%;
 }
 
 .Category {
     color: rgb(211, 194, 174); 
-    font-size: 12pt;
+    font-size: 16pt;
+    font-weight: 100;
     align-content: center;
-    margin: 10pt;
+    text-align: center;
+    margin: 10pt; 
+}
+
+.br1 { 
+    margin-right: 5pt; 
+    opacity: 0.5;
+}
+
+.br2 {
+    margin-left: 5pt; 
+    opacity: 0.5;
 }
 
 a:link, a:visited { 
-    text-decoration: none; 
-    font-size: 9pt;
     display: block;
-    margin-top: 3pt;
-    margin-left: 3pt;
+    font-size: 9pt;
+    font-weight: lighter;
+    text-decoration: none; 
+    margin-left: 10pt;
+    margin-right: 10pt;
+    margin-top: 20pt; 
 }
 
-.fixed { position: absolute; transform: translate(290%, 0); font-size: 7pt;}
-.white     { color: rgb(211, 194, 174); }
+.fixed { 
+    position: absolute; 
+    font-size: 4pt; 
+    transform: translate(0, -3px);
+}
+
+.white     { color: rgb(197, 181, 162); }
 .gray      { color: rgb(116, 116, 116); }
 .darkgray  { color: rgb(73, 73, 73); }
-.red       { color: rgb(165, 106, 106); }
+.red       { color: rgb(156, 101, 101); }
 .orange    { color: rgb(145, 121, 95); }
 .yellow    { color: rgb(153, 147, 104); }
 .green     { color: rgb(94, 116, 97); }
-.blue      { color: rgb(89, 103, 133); }
+.blue      { color: rgb(93, 108, 141); }
 .blue_alt  { color: rgb(92, 130, 139); }
-.pink      { color: rgb(156, 110, 141); }
-.purple    { color: rgb(103, 90, 116); }
-.brown     { color: rgb(134, 115, 103); }
+.pink      { color: rgb(124, 89, 113); }
+.purple    { color: rgb(113, 99, 128); }
+.brown     { color: rgb(122, 104, 94); }
