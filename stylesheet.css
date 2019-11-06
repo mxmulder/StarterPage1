@@ -1,5 +1,6 @@
 html {
     height: 100vh;
+    width: 100vw;
 }
 
 body {
@@ -23,18 +24,64 @@ span {
 }
 
 .Main_Wrapper {
-    height: 100%;
+    height: 100vh;
+    width: 84vw;
     display: grid;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
     grid-template-rows: 1fr 1fr 2fr; 
     grid-template-columns: repeat(8, 1fr);
 }
-
-.CONTENT {
-    text-align: center;
-    margin: 10%;
+@media (min-width: 500px) {
+    .Content1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content2 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content3 {
+        grid-row-start: 2;
+        grid-column-start: 3;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content4 {
+        grid-row-start: 2;
+        grid-column-start: 4;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content5 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content6 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;
+        margin: 10%;
+    }
+    .Content7 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;
+        margin: 10%;
+    }.Content8 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;
+        margin: 10%;
+    }
 }
+
 
 .Category {
     color: rgb(211, 194, 174); 
@@ -68,7 +115,7 @@ a:link, a:visited {
 .fixed { 
     position: absolute; 
     font-size: 4pt; 
-    transform: translate(0, -3px);
+    transform: translate(0, -3pt);
 }
 
 .white     { color: rgb(197, 181, 162); }
